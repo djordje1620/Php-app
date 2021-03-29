@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Lexend:wght@100;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lexend', sans-serif;
+    text-decoration: none !important;
+}
+.carousel-caption{
+    bottom: 45% !important;
+    left: 15% !important;
+    right: 0% !important;
+    width: 35% !important;
+    background:rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+} 
+a.text-secondary:hover, .zuta:hover{
+    color:rgb(133, 245, 4) !important;
+    transition: 0.2s !important;
+}
+.nav-link{
+    font-size: 17px !important;
+}
+.icon{
+    width: 60px;
+    margin:auto;
+    height: 60px;
+    border-radius: 50%;
+    background: rgb(133, 245, 4);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+.zuta{
+    color:rgb(133, 245, 4) !important; 
+}
+.bg-lightgrey{
+    background-color: rgb(190, 176, 176);
+}
+.bg-black{
+    background: rgb(20, 19, 19);
+}
+.txt-black{
+    color:black !important;
+}
+.dm-h:hover{
+    border-bottom:2px solid rgb(133, 245, 4); 
+    transition: 0.5s;
+}
+.fa-university,.fa-leaf,.fa-heartbeat,.fa-dumbbell,.fa-nutritionix,.fa-laptop,.fa-instagram,.fa-facebook-f,.fa-twitter,.fa-linkedin-in{
+    font-size: 23px;
+    color:white;
+}
+.fa-instagram:hover,.fa-facebook-f:hover,.fa-twitter:hover,.fa-linkedin-in:hover{
+    color:rgb(133, 245, 4); 
+    transform:translateX(3px);
+    font-size: 28px;
+    transition: 0.5s;
+}
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.dm-text-center{
+    margin:auto !important;
+}
+.dm-blur{
+    filter: blur(1.5px);   
+}
+.dm-kont{
+    position: absolute;
+    top: 20%;
+    left:25%;
+    width:50%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+    border-radius: 15px;
+}
+.dm-sm-abs{
+    position: absolute;
+    top: 40%;
+    right:5%;
+    width:5%;
+    z-index: 3;
+    border-radius: 15px;
+}
+.container-fluid img.bg{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dm-sub{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 30% !important;
+}
+.dm-kont h4{
+    font-size: 28px;
+}
+.container .row .col-sm p{
+    margin-bottom: 0px !important;
+}

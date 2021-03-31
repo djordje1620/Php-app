@@ -1,3 +1,4 @@
+
 @media (max-width:768px){
     .carousel-caption{
         bottom: 35% !important;       
@@ -17,6 +18,10 @@
     }
     .dm-not-flex{
         display: block;
+    }
+    #dm-sign-in,#dm-log-in{
+        width: 70% !important;
+        left:15%;
     }
 }
 @media (max-width:426px){
@@ -42,7 +47,8 @@
     .container-xl {
         font-size: 15px !important;
     }
-}
-@media (max-width:321px){
-    
+    #dm-sign-in,#dm-log-in{
+        width: 96% !important;
+        left:2%;
+    }
 }

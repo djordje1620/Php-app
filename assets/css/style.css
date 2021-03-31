@@ -80,6 +80,7 @@ a.text-secondary:hover, .zuta:hover{
 #dm-log-in{
     width:30% !important;
     left:35%;
+    top:10% !important;
 }
 .dm-sm-abs{
     position: absolute;
@@ -117,6 +118,13 @@ a.dm-hov2:hover,
 .navbar-toggler{
     background-color:#343a40!important
 }
-input[type=checkbox]:checked{
+#dm-sign-in{
     display: none;
+    position: absolute;
+    top: 10%;
+    width:30%;
+    left: 35%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+    border-radius: 15px;
 }

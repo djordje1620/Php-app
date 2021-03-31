@@ -48,13 +48,58 @@
           <div class="form-group">
             <input type="submit" name="submit" class="form-control dm-sub bg-dark text-success" value="Prijavi se"/>
           </div>
-          <div class="form-group">
-            <a>Nemas nalog? Uloguj se</a>
-            <input type="checkbox" />
+          <div class="form-group text-center">
+            <a href="#" class="funct text-secondary " onclick="func()">Nemas nalog? Uloguj se</a>
           </div>
         </form>
    </div>
+   <div class="dm-kont p-3" id="dm-sign-in">
+    <h4 class="text-center mb-3 text-dark"><span class="text-success">Registruj se</span></h4>
+    <div class="form-group text-center">
+      <label for="inpIme" class="text-success">Ime</label>
+      <input type="text" class="form-control bg-lightgrey" id="inpIme"/>
+    </div>
+    <div class="form-group text-center">
+      <label for="inpPrezime" class="text-success ">Prezime</label>
+      <input type="text" class="form-control bg-lightgrey" id="inpPrezime"/>
+    </div>
+    <div class="form-group text-center">
+      <label for="inputEmai" class="text-success">Email</label>
+      <input type="email" class="form-control bg-lightgrey" id="inputEmai" placeholder="...@gmail.com"/>
+    </div>
+    <div class="form-group text-center">
+      <label for="passsword" class="text-success">Lozinka</label>
+      <input type="password" class="form-control bg-lightgrey" id="passsword"/>
+    </div>
+    <div class="form-group">
+      <input type="submit" name="submit" class="form-control dm-sub bg-dark text-success" value="Registruj se"/>
+    </div>
+    <div class="form-group text-center">
+      <a href="#" class="funct text-secondary " onclick="func2()">Imaš nalog? Prijavi se</a>
+    </div>
 </div>
+</div>
+<script>
+  function func(){
+    var funct = document.getElementsByClassName('funct');
+    if(funct[0].click){
+      document.getElementById('dm-log-in').style.display='none';
+    }
+    if(funct[0].click){
+      document.getElementById('dm-sign-in').style.display='block';
+    }
+  }
+
+  function func2(){
+    var funct = document.getElementsByClassName('funct');
+    if(funct[0].click){
+      document.getElementById('dm-log-in').style.display='block';
+    }
+    if(funct[0].click){
+      document.getElementById('dm-sign-in').style.display='none';
+    }
+  }
+</script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>

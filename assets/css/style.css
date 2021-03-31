@@ -77,6 +77,10 @@ a.text-secondary:hover, .zuta:hover{
     z-index: 3;
     border-radius: 15px;
 }
+#dm-log-in{
+    width:30% !important;
+    left:35%;
+}
 .dm-sm-abs{
     position: absolute;
     top: 40%;
@@ -102,4 +106,17 @@ a.text-secondary:hover, .zuta:hover{
 }
 .container .row .col-sm p{
     margin-bottom: 0px !important;
+}
+a.dm-vel,span.dm-vel {
+    font-size: 13px !important;
+} 
+a.dm-hov2:hover,
+.container-fluid nav ol li a{
+    color: #28a745 !important;
+}
+.navbar-toggler{
+    background-color:#343a40!important
+}
+input[type=checkbox]:checked{
+    display: none;
 }

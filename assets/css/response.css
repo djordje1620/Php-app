@@ -15,6 +15,9 @@
     .dm-none{
         display: none !important;
     }
+    .dm-not-flex{
+        display: block;
+    }
 }
 @media (max-width:426px){
     .btn{
@@ -22,8 +25,8 @@
         padding: 1px;
     }
     .dm-kont{
-        width: 86%;
-        left:7%;
+        width: 94%;
+        left:3%;
     }
     .nav-link{
         font-size: 13px !important;

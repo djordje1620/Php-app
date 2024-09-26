@@ -65,11 +65,10 @@ a.text-secondary:hover, .zuta:hover{
 .dm-text-center{
     margin:auto !important;
 }
-.dm-blur{
-    filter: blur(1.5px);   
-}
 .dm-kont{
     position: absolute;
+    z-index: 3;
+
     top: 20%;
     left:25%;
     width:50%;
@@ -81,6 +80,14 @@ a.text-secondary:hover, .zuta:hover{
     width:30% !important;
     left:35%;
     top:10% !important;
+}
+#dm-profil{
+    position: absolute;
+    z-index: 3;
+    width:80% !important;
+    left: 50%;
+    top: 44%;
+    transform: translate(-50%, -50%);
 }
 .dm-sm-abs{
     position: absolute;
@@ -119,7 +126,6 @@ a.dm-hov2:hover,
     background-color:#343a40!important
 }
 #dm-sign-in{
-    display: none;
     position: absolute;
     top: 10%;
     width:30%;
@@ -127,4 +133,41 @@ a.dm-hov2:hover,
     background: rgba(0, 0, 0, 0.8);
     z-index: 3;
     border-radius: 15px;
+}
+#footer p a{
+    color: rgb(234, 235, 236);
+}
+#footer p a:hover{
+    color: rgb(133, 245, 4) !important;
+    transition: 0.3s;
+}
+.btnUsluga{
+    width: 200px !important;
+    margin: 10px auto 30px auto; 
+}
+label{
+    margin:0px !important;
+}
+.admin-panel{
+    background-color: #343a40;
+    display: inline-block;
+}
+.wd-100{
+    background-color: #b53349;
+    width: 500px !important;
+}
+.statistika-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.statistika-item {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#imgProf{
+    width: 150px;
+    height: 150px;
 }

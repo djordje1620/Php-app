@@ -1,45 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edukacija | Đorđe Marković</title>
-    <meta name="keywords" content=" POVEĆANJE MIŠIĆNE MASE IDEALAN OBROK Kalorijski suficit treninga  trening hranu i odmor sna Internet KADA JE NAJBOLJE RADITI KARDIO TRENING ZA KOLIKO MOGU DA VIDIM PRVE REZULTATE KAKO FUNKCIONIŠE SISTEM RADA DECA I ISHRANA"/>
-    <meta name="description" content="3 stvari su potrebne za odvijanje ovog procesa Kalorijski suficit. Tezinski trening. Odmor. Svaka se mora ispostovati kako bi se proces odvijao kako treba, kako bi ste povecali vasu misicnu masu...
-    Internet je danas prepravljen informacijama vezanim za broj obroka. Koji broj obroka je idealan u toku dana? Koji donosi najbolje rezultate? Da li je broj obroka bitan u toku dana? Pa i ne baš. Od broja obroka ni najmanje ne zavisi da li ćete praviti dobre rezultate ili ne. Broj obroka bi najbolje bilo da prilagodite vašem životnom stilu...
-    Govorim o kardio treningu niskog inteziteta, odnosno, o treningu takvog tipa, gde ćete koristiti masti kao glavno energetsko gorivo a ne ugljene hidrate. Takav tip kardia podrazumeva neko sporije trčanje, brzi hod, vožnju bajsa, nisko intenzivno plivanje,odnosno, svaku fizičku aktivnost koju ćete obavljati duže od 10ak minuta..
-    Čuli smo da deca po rodjenju, i dok su u razvoju treba da jedu sve, ne smeju biti na dijetama.. Deca tada rastu i razvijaju se, njima je potrebna energija. Da, ne bi trebala biti na dijetama, pogotovo ne na nekim tipovima ishrane kao sto su keto, fasting, i da ne nabrajamo dalje jer ih ima milion. Dete, dok je u razvoju, jednostavno bi trebalo biti u kalorijskom suficitu. Sa svim se slazem, osim sa ovim: deca ne bi trebala tokom svog rasta i razvoja jesti..."/>
-    <link rel="shortcut icon" href="../favicon.ico"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-    <script src="https://kit.fontawesome.com/932b315ef8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/style.css"/>
-    <link rel="stylesheet" href="../css/response.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-<body>
-  <div class="d-flex flex-row-reverse bg-dark p-0">
-    <div class="p-0 pr-2 pl-2 bd-highlight"><a href="apk.html" class="text-secondary dm-vel dm-hov2">Registruj se</a></div>
-    <div class="p-0 pr-2 pl-2 bd-highlight"><a  href="apk.html" class="text-secondary dm-hov2 dm-vel ">Prijavi se</a>  <span class="text-secondary dm-vel">|</span></div>
-    <div class="p-0 pr-2 pl-2 bd-highlight"><span class="text-success dm-vel">Koristi aplikaciju</span></div>
-  </div>
-    <div class="container-fluid py-1 mb-5 bg-black sticky-top ">
-        <nav class="navbar navbar-expand-lg navbar-light bg-black">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav dm-text-center">
-                <a class="nav-link text-secondary text-uppercase" href="../../index.html">Početna </a>
-                <a class="nav-link text-secondary text-uppercase" href="../../index.html">Usluge</a>
-                <a class="nav-link text-secondary text-uppercase" href="../../index.html">Utisci</a>
-                <a class="nav-link text-secondary text-uppercase" href="#kontakt">Kontakt</a>
-                <a class="nav-link zuta  text-uppercase" href="#">Edukacija</a>
-              <a class="nav-link text-secondary text-uppercase" target="_blank" href="https://djordje1620.github.io/portfolio.github.io/portfolio/">O meni</a>
-              </div>
-            </div>
-          </nav>          
-    </div>
+<?php
+  include ("../../config/connection.php");
+  include_once("../../logic/session.php");
+  include ("../../logic/functions.php");
+  include ("../../logic/url.php");
+  include_once "../fixed/head.php";
+
+  try {
+    $nav = getNav();
+    }
+  catch(PDOException $ex){
+    echo "Failed to load navigation : " . $ex->getMessage();
+  }
+  include_once "../fixed/nav.php";
+    
+?>
+
+
     <div class="container-lg pt-5 mt-5">
         <h4 data-aos="fade-up" data-aos-duration="1000"><span class="text-success">POVEĆANJE MIŠIĆNE MASE</span></h4>
         <p class="text-justify py-2 text-secondary" data-aos="fade-up" data-aos-duration="2000">3 stvari su potrebne za odvijanje ovog procesa Kalorijski suficit. Tezinski trening. Odmor. Svaka se mora ispostovati kako bi se proces odvijao kako treba, kako bi ste povecali vasu misicnu masu. Kalorijski suficit zanci da cete jesti vise nego sto se trosite, i samo tako mozete povecati vase kilograme, to je logicno zar ne. Nije svaki kalorijski suficit isti, kalorijski suficit napravljen iz preradjene i nezdrave hrane ce vam doneti pad energije, anksioznost, poremecaj hormona, cestu depresiju, nagomilavanje sala. Suficit treba biti dobro određen, ni preveliki ni premali, iz kvalitetni izvora koji ce vam omogućiti vise energije, bolje raspolozenje, kvalitetnu masu odnosno pretezno misicnu masu. Tezinski trening znaci trening sa dodatnim opterecenjem. Znaci dobro konstruisan trening koji ce pokrenuti vase misice na rast. Prvo ce ih ostetiti, jer svaki trening prvo nasteti vasim misicima, pa se vi zatim u procesu odmora oporavljate, obezbedjujete misicna potrebne nutrijente prvenstveno proteine. Misici imaju u tom slucaju sva tri uslova potrebna za rast - trening, hranu i odmor. Za tezinski trening je potrebno puno energije sto automatski znaci da cete imati potrebu da vise jedete i vas apetit ce se povecati. Odmor je taj koji ljudi vrlo cesto zapostavljaju. Ako se zapostavi to moze biti jako lose, ne samo da cete imati slabiji napredak vec mozete i nasteti vasem zdravlju. Telo se oporavlja u stanju mirovanja, telo napreduje u stanju mirovanja, vasi misici rastu tokom odmora, ne tokom treninga. Spavanje mora biti ispostovano, dok spavamo veliki broj nasih hormona radi za nas, prvenstveno hormon rasta koji , zato se trudite da imate dnevno minimum 7-8 sati dubokog sna.</p>
@@ -79,7 +55,7 @@
                   </div>
                 </div>
               </div>
-        <img src="../img/slika_pozadina.jpg" class="position-relative dm-blur bg" alt="blur pozadina kontakt forme">
+        <img src="<?= $path ?>assets/img/slika_pozadina.jpg" class="position-relative dm-blur bg" alt="blur pozadina kontakt forme">
         <div class="dm-sm-abs flex-column d-flex justify-content-center align-items-center p-3 dm-none bg-black" data-aos="fade-left" data-aos-duration="1000">
                 <p>
                     <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -96,27 +72,34 @@
         </div>
        <div class="dm-kont p-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
             <h4 class="text-center mb-3"><span class="text-success">Kontakt</span></h4>
-            <form>
+            <form action="" method="">
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="inputIme"  class="text-success">Ime</label>
-                        <input type="text" class="form-control bg-lightgrey" id="inputIme">
+                        <label for="ime"  class="text-success">Ime</label>
+                        <input type="text" class="form-control bg-lightgrey" id="ime">
+                        <label for="" id="ime"></label>
                      </div>
                     <div class="form-group col-md-6">
-                        <label for="text" class="text-success">Prezime</label>
-                        <input type="text" class="form-control bg-lightgrey" id="text">
+                        <label for="prezime" class="text-success">Prezime</label>
+                        <input type="text" class="form-control bg-lightgrey" id="prezime">
+                        <label for="" id="prezime"></label>
                     </div>
               </div>
               <div class="form-group">
-                <label for="inputEmail" class="text-success">Email</label>
-                <input type="email" class="form-control bg-lightgrey" id="inputEmail" placeholder="...@gmail.com">
+                <label for="email" class="text-success">Email</label>
+                <input type="email" class="form-control bg-lightgrey" id="email" placeholder="...@gmail.com">
+                <label for="" id="email"></label>
               </div>
               <div class="form-group">
-                <label for="message" class="text-success">Poruka </label>
-                <textarea id="message" class="form-control bg-lightgrey"></textarea>
+                <label for="poruka2" class="text-success">Poruka </label>
+                <textarea id="poruka2" name="poruka2" class="form-control bg-lightgrey"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" name="submit" class="form-control dm-sub bg-dark text-success" value="Pošalji"/>
+                <button name="sendMsg" id="sendMsg" class="form-control dm-sub bg-dark text-success"/> Pošalji</button>
+              </div>
+              
+              <div id="odgovor">
+
               </div>
             </form>
        </div>
@@ -137,16 +120,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid mt-3 bg-dark text-center">
-        <p class="p-3 mb-0 text-light">
-            Copyright &#169 2021 All rights reserved | Đorđe Marković
-        </p>
-    </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-</body>
-</html>
+
+<?php
+    include_once ("../fixed/footer.php");   
+?>
